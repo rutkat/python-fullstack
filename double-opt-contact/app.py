@@ -16,8 +16,8 @@ app.secret_key = secret
 app.config['SECRET_KEY'] = secret # auto-generated secret key
 app.config['HCAPTCHA_SECRET_KEY'] = 'your-secret-hcaptcha-key'
 
-# SQLAlchemy configurations
-SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://admin:user@localhost/tablename'
+# SQLAlchemy configuration
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://admin:user@localhost/tablename'
 
 # Email configurations
 app.config['MAIL_SERVER'] = 'your.domain.com'
