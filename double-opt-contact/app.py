@@ -4,7 +4,6 @@ from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
 from itsdangerous import URLSafeTimedSerializer, SignatureExpired
-from werkzeug.security import generate_password_hash, check_password_hash
 import secrets
 import bleach
 import requests
