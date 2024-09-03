@@ -1,0 +1,11 @@
+flask
+flask-mail
+secure
+SQLAlchemy
+Flask-WTF
+Flask-SQLAlchemy
+mysql-connector-python
+Flask-Limiter
+bleach
+flask-hcaptcha
+requests
