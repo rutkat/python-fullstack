@@ -9,18 +9,21 @@ A single opt-in form just allows anybody including bots to enter an email addres
 ## Solution
 We can include a double opt-in form which requires the submitter to confirm their email address upon receipt to their mailbox. This can be in addition to a more technical approach using cloudflare or "captca".
 
-### Our modules consiste of the following.
--Common Python modules for web forms including using templates, a redirect and notification flash
+## Our modules consiste of the following.
+- Common Python modules for web forms including using templates, a redirect and notification flash
 `from flask import Flask, render_template, request, url_for, redirect, flash`
-\n
--For mailing messages
+
+- For mailing messages
 `from flask_mail import Mail, Message`
-\n
--To include a timestamp when saving to a database
+
+- To include a timestamp when saving to a database
 `from datetime import datetime`
 
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.sql import func
+- For using a SQL database
+```from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.sql import func```
+
+```
 import secrets
 import bleach
 import requests
