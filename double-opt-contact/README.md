@@ -11,16 +11,24 @@ We can include a double opt-in form which requires the submitter to confirm thei
 
 ### Our modules consiste of the following.
 -Common Python modules for web forms including using templates, a redirect and notification flash
-```from flask import Flask, render_template, request, url_for, redirect, flash```
+```
+from flask import Flask, render_template, request, url_for, redirect, flash
+```
 
 -For mailing messages
-```from flask_mail import Mail, Message```
+```
+from flask_mail import Mail, Message
+```
 
 -To include a timestamp when saving to a database
-```from datetime import datetime```
+```
+from datetime import datetime
+```
 - For using a SQL database
-```from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.sql import func```
+```
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.sql import func
+```
 - For santizing requests
 ```
 import secrets
