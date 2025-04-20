@@ -1,3 +1,4 @@
+# Python template to demonstrate API call to OpenAI models using the chat.completions.create() 
 from openai import OpenAI
 
 base_url = "http://localhost:1234/v1/"
