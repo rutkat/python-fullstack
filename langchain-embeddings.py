@@ -1,17 +1,8 @@
-# Import Ollama
-#from langchain.llms import Ollama
+
 from langchain_ollama.llms import OllamaLLM
-
-
-# Import the document loader
-# from langchain.document_loaders import WebBaseLoader
 from langchain_community.document_loaders import WebBaseLoader
-# Import the text splitter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-# Import the GPT4All embeddings tool
-# from langchain.embeddings import GPT4AllEmbeddings
 from langchain_community.embeddings import GPT4AllEmbeddings
-# Import the vector store
 from langchain_community.vectorstores import Chroma
 
 # Import chains
