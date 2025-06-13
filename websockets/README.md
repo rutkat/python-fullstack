@@ -6,8 +6,6 @@
   <br>
 </h1>
 
-<h4 align="center">A minimal example of websockets based on Python FastAPI</h4>
-
 &nbsp;
 
 ### Executing script
