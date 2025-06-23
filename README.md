@@ -1,7 +1,5 @@
 # My Python full-stack code templates
 
-This is where I publish my learnings and progress of learning web development with AI, agents, including LLMs, machine learning, user interfaces and more...
-
 ## Description
 
 Follow me here on github for updates if you're into Python, web dev and artificial intelligence.
