@@ -5,13 +5,12 @@
 My Python web development work including finance, front end, artificial intelligence, etc.
 
 ### Tech stack
+Python, Javascript, AI, LangChain, Ollama, OpenAI, MCP
 
 ```
 ```
+Table of Contents
 
-### Executing program
-
-* How to run the program on your command line. See individual directories for additional README files and instructions.
 | Name    | Description  |
 | ------- | ------------ |
 |[You are here](https://github.com/rutkat/python-fullstack) | Python files of MCP, Langchain, Ollama, OpenAI, Localhost LLM |  
