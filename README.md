@@ -19,5 +19,3 @@ My Python web development work including finance, front end, artificial intellig
 |[double-opt-contact](https://github.com/rutkat/python-fullstack/tree/main/double-opt-contact) | Anti-spam, double opt-in Email form with Python |  
 |[websockets](https://github.com/rutkat/python-fullstack/tree/main/websockets) | Asyncio messaging with a websockets server |  
 |[object_detection_websockets](https://github.com/rutkat/python-fullstack/tree/main/object_detection_websockets) | Computer vision object detection using Canvas, websockets, Yolo Vision Model |  
-
-|[](https://github.com/rutkat/) |  |  
