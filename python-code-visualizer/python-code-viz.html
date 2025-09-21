@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Code Visualizer</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="header">
+        <h1>🐍 Python Code Visualizer</h1>
+        <div class="controls">
+            <div class="speed-control">
+                <span>Speed:</span>
+                <input type="range" id="speedSlider" class="speed-slider" min="100" max="2000" value="1000" step="100">
+                <span id="speedValue">1.0s</span>
+            </div>
+            <button id="runBtn" class="btn btn-primary">
+                ▶️ Run
+            </button>
+            <button id="stepBtn" class="btn btn-secondary">
+                ⏭️ Step
+            </button>
+            <button id="resetBtn" class="btn btn-secondary">
+                🔄 Reset
+            </button>
+            <div class="examples-dropdown">
+                <button id="examplesBtn" class="btn btn-secondary">
+                    📚 Examples
+                </button>
+                <div id="examplesMenu" class="examples-menu">
+                    <div class="example-item" data-example="fibonacci">Fibonacci Sequence</div>
+                    <div class="example-item" data-example="bubble">Bubble Sort</div>
+                    <div class="example-item" data-example="factorial">Factorial</div>
+                    <div class="example-item" data-example="prime">Prime Numbers</div>
+                    <div class="example-item" data-example="nested">Nested Loops</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="panel left-panel">
+            <div class="panel-header">Code Editor</div>
+            <div class="code-editor">
+                <div class="line-numbers" id="lineNumbers"></div>
+                <div class="code-content">
+                    <textarea id="codeInput" spellcheck="false"># Fibonacci sequence example
+def fibonacci(n):
+    a, b = 0, 1
+    result = []
+    
+    for i in range(n):
+        result.append(a)
+        a, b = b, a + b
+    
+    return result
+
+# Calculate first 8 Fibonacci numbers
+fib_numbers = fibonacci(8)
+print(fib_numbers)</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel right-panel">
+            <div class="panel-header">Execution Visualizer</div>
+            <div class="visualizer" id="visualizer">
+                <div style="text-align: center; color: #999; padding: 50px;">
+                    Click "Run" or "Step" to visualize code execution
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="status-bar">
+        <div class="status-item">
+            <div class="status-indicator"></div>
+            <span id="statusText">Ready</span>
+        </div>
+        <div class="status-item">
+            <span id="lineInfo">Line: -</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
