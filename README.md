@@ -6,8 +6,7 @@ My Python web development work including finance, front end, artificial intellig
 
 ### Tech stack
 Python, Javascript, AI, LangChain, Ollama, OpenAI, MCP, LLM
-```
-```
+
 Table of Contents
 
 | Name    | Description  |
