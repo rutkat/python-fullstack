@@ -1,7 +1,6 @@
+import os
 from tabnanny import verbose
 from dotenv import load_dotenv
-import os
-
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
@@ -21,8 +20,7 @@ todoist = TodoistAPI(todoist_api_key)
 @tool
 def add_task(task, desc=None):
     """Add a new task to the user's task list. Use this when the user wants to add or create a task"""
-    todoist.add_task(content=task,
-
+    todoist.add_task(content=task, description=desc)
 
 @tool
 def show_tasks():
@@ -43,10 +41,7 @@ llm = ChatGoogleGenerativeAI(
     temperature=0.3
 )
 
-system_prompt = """You are a helpful assistant. 
-You will help the user add tasks.
-You will help the user show existing tasks. If the user asks to show the tasks: for example, "show me the tasks"
-print out the tasks to the user. Print them in a bullet list format. 
+system_prompt = """You are a helpful assistant.  You will help the user add tasks.
 """
 
 prompt = ChatPromptTemplate([
@@ -56,7 +51,6 @@ prompt = ChatPromptTemplate([
     MessagesPlaceholder("agent_scratchpad")
 ])
 
-# chain =  prompt | llm | StrOutputParser()
 agent = create_openai_tools_agent(llm, tools, prompt)
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=False)
 
