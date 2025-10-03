@@ -1,0 +1,7 @@
+asyncio
+torch
+fastapi
+pillow
+pydantic
+transformers
+
